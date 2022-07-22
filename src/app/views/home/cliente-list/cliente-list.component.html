@@ -1,0 +1,40 @@
+<mat-tab-group mat-align-tabs="start" style="padding-top: 40px; padding-left: 2%; padding-right: 2%;">
+  <mat-tab label="CLIENTES">
+    <mat-progress-bar *ngIf="!previous" mode="indeterminate"></mat-progress-bar>
+    <div *ngIf="previous" fxLayout="row wrap" fxLayoutAlign="start center" style="padding: 2%">
+      <ng-container *ngFor="let cliente of clientes" style="margin: 0.5%;">
+
+        <mat-card class="mat-card-cliente" fxFlex="0 1 calc(100% - 11px)" fxFlex.lt-md="0 1 calc(50% - 11px)"
+          fxFlex.lt-sm="100%">
+          <div>
+            <mat-card-title class="mat-card-title-cliente">
+              <h3>Nome - CPF/CNPJ</h3>
+            </mat-card-title>
+          </div>
+
+          <mat-card-content class="mat-card-content-cliente">
+            <div fxFlex="80">
+              <p>
+                <span>{{cliente.nome}}</span>
+                <span> - </span>
+                <span>{{cliente.cpfCnpj}}</span>
+              </p>
+            </div>
+            <div fxFlex="20" fxLayoutAlign="end center">
+             <!--
+             <button mat-raised-button (click)="statusCliente(cliente.id)">
+                <mat-icon>edit</mat-icon>
+              </button>
+              --> 
+              <button mat-raised-button (click)="statusCliente(cliente.id)">
+                <mat-icon>cancel</mat-icon>
+              </button>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </ng-container>
+
+    </div>
+  </mat-tab>
+  <mat-tab label="API">Content 2</mat-tab>
+</mat-tab-group>

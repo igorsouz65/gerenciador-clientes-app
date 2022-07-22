@@ -1,0 +1,24 @@
+  .mat-card-cliente{
+    width: 150px;
+    border: 1px solid white;
+    border-radius: 4px 3px 6px / 2px 4px;
+    padding: 15px 1% 1% 1%;
+    text-align: justify;
+    margin: 0.5%;
+  }
+
+  .mat-card-title-cliente{
+    padding-left: 10px;
+    padding-top: 0px;
+    padding-right: 15px;
+    margin-bottom: 0px;
+    min-height: 10px;
+  }
+
+    .mat-card-content-cliente{
+            padding-left: 10px;
+            padding-top: 0px;
+            padding-right: 15px;
+            margin-bottom: 0px;
+            min-height: 10px;
+  }

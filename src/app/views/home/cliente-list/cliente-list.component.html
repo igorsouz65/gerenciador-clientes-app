@@ -37,8 +37,12 @@
     </div>
   </mat-tab>
   <mat-tab label="API">
+    <script>
+      integração = "http://localhost:8080/v1/clientes/{cpfCnpj}";
+    </script>
     <p></p>
-    <h1>Endpoint para buscar dados do paciente por CPF/CNOJ </h1>
-    <a href="http://localhost:8080/v1/clientes/{cpfCnpj}"></a>
+    <h1>Endpoint para buscar dados do paciente por CPF/CNPJ </h1>
+    <h3>http://localhost:8080/v1/clientes/{{'{cpfCnpj}'}}</h3>
+    <h4>Retorna um cliente buscando pelo CPF ou CNPJ</h4>
   </mat-tab>
 </mat-tab-group>
